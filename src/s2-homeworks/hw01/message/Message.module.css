@@ -1,25 +1,49 @@
 .message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
 
 }
 
 .imageAndText {
-
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .imageAndText img {
-
+    width: 48px;
+    height: 48px;
 }
 
 .text {
-
+    font-size: 16px;
+    margin-right: 10px;
+    position: relative;
+    background: #0066CC;
+    border: 1px solid #0066CC;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 600px;
 }
 
 .text:after {
-
+    content: '';
+    position: absolute;
+    bottom: -1px; /* Adjust this to control the distance of the triangle from the box */
+    right: -13px;    /* Adjust this to control the position of the triangle horizontally */
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #0066CC #0066CC;
 }
 
 .name {
-
+    font-size: 18px;
+    font-weight: 600;
+    text-align: right;
 }
 
 .messageText {
@@ -27,5 +51,8 @@
 }
 
 .time {
-
+    font-weight: 600;
+    font-size: 10px;
+    margin-right: 10px;
+    color: black;
 }

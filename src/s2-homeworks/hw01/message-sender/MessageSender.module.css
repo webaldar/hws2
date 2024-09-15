@@ -1,5 +1,5 @@
 .sendForm {
-
+    align-items: flex-end;
 }
 
 .textarea {
@@ -7,7 +7,15 @@
 }
 
 .button {
-
+    width: 120px;
+    height: 40px;
+    background-color: #0066CC;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    border-radius: 20px;
 }
 
 .button:hover {

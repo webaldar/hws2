@@ -3,9 +3,17 @@
 }
 
 .hw {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .hwTitle {
-
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    font-style: normal;
+}
+.hw>div {
+    display: flex;
+    flex-direction: column;
 }

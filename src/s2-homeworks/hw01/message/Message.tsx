@@ -17,19 +17,19 @@ const Message = (props: MessagePropsType) => {
                     // создаёт студент
                     alt={'avatar'}
                     src={props.message.user.avatar}
-                    width={'48px'}
-                    height={'48px'}
+
 
                     //
                 />
                 <div className={s.text}>
                     <div id={'hw1-name-' + props.message.id} className={s.name}>
                         {/*создаёт студент*/}
-
+                        <h2>{props.message.user.name}</h2>
                         {/**/}
                     </div>
                     <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
                         {/*создаёт студент*/}
+                        <p>{props.message.message.text}</p>
 
                         {/**/}
                     </pre>
@@ -37,6 +37,7 @@ const Message = (props: MessagePropsType) => {
             </div>
             <div id={'hw1-time-' + props.message.id} className={s.time}>
                 {/*создаёт студент*/}
+                <time>{props.message.message.time}</time>
 
                 {/**/}
             </div>
