@@ -3,6 +3,7 @@ import Affair from './affair/Affair'
 import {AffairType, FilterType} from '../HW2'
 import s from './Affairs.module.css'
 
+
 type AffairsPropsType = {
     data: AffairType[] // need to fix any
     setFilter: (filter: FilterType) => void
@@ -30,6 +31,7 @@ function Affairs(props: AffairsPropsType) {
     const cnLow = s.button + ' ' + s.low + (props.filter === 'low' ? ' ' + s.active : '')
 
     const mappedAffairs = props.data.map((a: AffairType) => (
+
         <Affair
             key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
             affair={a}
@@ -70,7 +72,7 @@ function Affairs(props: AffairsPropsType) {
                 </button>
             </div>
             <div className={s.affairs}>{mappedAffairs}</div>
-            <div>{props.data[0]._id}</div>
+            {/*{console.log(props.data)}*/}
         </div>
     )
 }

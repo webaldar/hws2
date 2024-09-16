@@ -52,7 +52,7 @@ export const deleteAffair = (affairs: AffairType[], _id: number): any => { // ne
 
 function HW2() {
     const [affairs, setAffairs] = useState<AffairType[]>(defaultAffairs) // need to fix any
-    const [filter, setFilter] = useState<FilterType>('all')
+    const [filter, setFilter] = useState<FilterType>('middle')
 
     const filteredAffairs = filterAffairs(affairs, filter)
     const deleteAffairCallback = (_id: number) => { // need to fix any
