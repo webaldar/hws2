@@ -7,6 +7,7 @@ import HW3 from "../s2-homeworks/hw03/HW3";
 function App() {
     return (
         <div className={s.App}>
+            <div>aaaaa</div>
             <HW1/>
             {/*раскомментировать по ходу выполнения*/}
             <HW2/>
